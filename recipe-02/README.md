@@ -15,5 +15,5 @@
 ## to build for Ninja 
 - from parent directory:
         
-        cmake -Bninja
-        cmake --build ninja -G Ninja
+        cmake -Bninja -G Ninja
+        cmake --build ninja
