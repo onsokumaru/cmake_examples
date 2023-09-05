@@ -1,6 +1,6 @@
 # --- Build Instructions --- #
 
-## create build and ninja directory
+## create **build and ninja directory
     
         mkdir build ninja
 
@@ -31,12 +31,26 @@
 
 ## to build for Ninja 
 - from parent directory:
+
+  * for building and linking as a shared library
         
-        cmake -Bninja
-        cmake --build ninja -G Ninja
+        cmake -Bninja -G Ninja -D USE_LIBRARY=ON
+        cmake --build ninja
+
+  * for building and linking as a static library
+        
+        cmake -Bninja -G Ninja -D USE_LIBRARY=ON \
+              -D MAKE_STATIC_LIBRARY=ON \
+              -D MAKE_SHARED_LIBRARY=OFF
+        cmake --build ninja
+
+  * for building with source files only
+        
+        cmake -Bninja -G Ninja -D USE_LIBRARY=ON \
+              -D MAKE_SHARED_LIBRARY=ON
+        cmake --build ninja
 
 
 ---
-## Conditional Compilation
 
 
