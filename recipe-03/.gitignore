@@ -1,0 +1,3 @@
+# --- local .gitignore --- #
+build/*
+ninja/*
