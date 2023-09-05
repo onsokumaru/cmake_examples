@@ -2,7 +2,7 @@
 
 ## create build and ninja directory
     
-            mkdir build ninja
+        mkdir build ninja
 
 
 ## to build for Unix Makefile
