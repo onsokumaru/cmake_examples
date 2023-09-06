@@ -1,6 +1,6 @@
 # --- Build Instructions --- #
 
-## create **build and ninja directory
+## create build and ninja directory
     
         mkdir build ninja
 
